@@ -26,8 +26,8 @@ public function show() {
 public function get() {
   Request::refresh();
   $data = Request::old('post', 'name');
-  var_dump($data);
-  
+  var_dump("in get() inside admin/dashboardController" . $data);
+
   // if(Request::has('post')) {
   //   $request = Request::get('post');
   //   var_dump($request->name);

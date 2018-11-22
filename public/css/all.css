@@ -5875,16 +5875,16 @@ a.thumbnail image {
 }
 
 .position-right {
-  top: 0;
+  bottom: 0;
   right: 0;
-  height: 100%;
+  height: 50%;
   overflow-y: auto;
-  width: 250px;
-  transform: translateX(250px);
+  width: 45%;
+  transform: translatey(250px);
 }
 
 .off-canvas-content .off-canvas.position-right {
-  transform: translateX(250px);
+  transform: translateX(100%);
 }
 
 .off-canvas-content .off-canvas.position-right.is-transition-overlap.is-open {
