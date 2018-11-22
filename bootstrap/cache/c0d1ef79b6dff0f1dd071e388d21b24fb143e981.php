@@ -8,6 +8,8 @@
   <h2>Dashboard</h2>
   <?php echo e($admin); ?>
 
+  <?php echo e(\App\Classes\Redirect::to('./')); ?>
+
   </div>
 </div>
 
