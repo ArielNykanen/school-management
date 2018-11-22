@@ -1,0 +1,4 @@
+1.change the name of the project in (package.json, bower.json, .env).
+2.dependencies are maybe old.. for your new project on the base 
+  so you may counter some errors couse of that.
+3.
