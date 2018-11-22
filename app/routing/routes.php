@@ -9,4 +9,6 @@ $router->map('GET', $baseUrl.'home', 'App\Controllers\IndexController@show', 'ho
 
 $router->map('GET', $baseUrl.'admin', 'App\Controllers\admin\DashboardController@show', 'admin_dashboard');
 
+$router->map('POST', $baseUrl.'admin', 'App\Controllers\admin\DashboardController@get', 'admin_form');
+
 ?>

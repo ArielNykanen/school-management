@@ -4,8 +4,9 @@ namespace App\Controllers\Admin;
 
 use App\Classes\Session;
 use App\Controllers\BaseController;
+use App\Classes\Request;
 
-class DashboardCOntroller extends BaseController {
+class DashboardController extends BaseController {
 
 public function show() {
   Session::add('admin', 'Welcome Admin!');
@@ -21,6 +22,21 @@ public function show() {
   }
   return view('admin/dashboard', ['admin' => $msg]);
 }
+
+public function get() {
+  Request::refresh();
+  $data = Request::old('post', 'name');
+  var_dump($data);
+  
+  // if(Request::has('post')) {
+  //   $request = Request::get('post');
+  //   var_dump($request->name);
+  // } else {
+  //   var_dump('posting does not exists!');
+  // }
+}
+
+
 
 
 
