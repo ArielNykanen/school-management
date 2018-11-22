@@ -21,6 +21,7 @@
       <div class="title-bar-left">
         <button class="menu-icon hide-for-large" type="button" data-open="offCanvas"></button>
         <h5 class="title-bar-title">{{ getenv('APP_NAME') }}</h5> 
+      
       </div>
     </div>
     </div>
